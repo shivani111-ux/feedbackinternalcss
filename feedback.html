@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,14 +56,23 @@
     <div class="container">
         <h2>Feedback Form</h2>
         <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name">Name (optional):</label>
+            <input type="text" id="name" name="name">
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email (optional):</label>
+            <input type="email" id="email" name="email">
             
-            <label for="message">Feedback:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <label for="phone">Phone (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="rating">Rating (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+            
+            <label for="question">Any Questions regarding product or service:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            
+            <label for="comments">Additional Comments (optional):</label>
+            <textarea id="comments" name="comments" rows="3"></textarea>
             
             <button type="submit">Submit</button>
         </form>
